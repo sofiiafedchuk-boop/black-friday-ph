@@ -1,0 +1,3169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width,initial-scale=1,viewport-fit=cover"
+>
+
+<meta name="theme-color" content="#050505">
+
+<title>Black Friday Phones</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@500;600;700;800;900&display=swap"
+  rel="stylesheet"
+>
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root{
+  --black:#030303;
+  --black2:#090909;
+  --black3:#151515;
+
+  --gold:#f4c652;
+  --gold-light:#ffe99a;
+  --gold-dark:#aa7012;
+
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+*{
+  box-sizing:border-box;
+  -webkit-tap-highlight-color:transparent;
+}
+
+html,
+body{
+  width:100%;
+  height:100%;
+
+  margin:0;
+
+  overflow:hidden;
+
+  background:#000;
+}
+
+body{
+  position:fixed;
+  inset:0;
+
+  display:flex;
+
+  align-items:center;
+  justify-content:center;
+
+  color:#fff;
+
+  user-select:none;
+
+  -webkit-font-smoothing:antialiased;
+}
+
+button{
+  border:0;
+  padding:0;
+
+  color:inherit;
+
+  font:inherit;
+
+  background:none;
+
+  cursor:pointer;
+}
+
+img{
+  display:block;
+
+  user-select:none;
+  -webkit-user-drag:none;
+}
+
+
+/* =========================================================
+   STRICT 9:16 APP
+========================================================= */
+
+.app{
+  position:relative;
+
+  width:min(
+    100vw,
+    calc(100dvh * 9 / 16)
+  );
+
+  aspect-ratio:9 / 16;
+
+  height:auto;
+
+  max-height:100dvh;
+
+  margin:auto;
+
+  overflow:hidden;
+
+  isolation:isolate;
+
+  background:
+
+    radial-gradient(
+      circle at 12% 3%,
+      rgba(255,200,64,.22) 0%,
+      rgba(209,143,23,.07) 27%,
+      transparent 44%
+    ),
+
+    radial-gradient(
+      circle at 100% 35%,
+      rgba(195,127,16,.13),
+      transparent 38%
+    ),
+
+    radial-gradient(
+      circle at 0% 84%,
+      rgba(245,185,43,.11),
+      transparent 34%
+    ),
+
+    linear-gradient(
+      155deg,
+      #020202 0%,
+      #080808 36%,
+      #120f09 63%,
+      #030303 100%
+    );
+}
+
+@media(min-width:520px){
+
+  .app{
+    border-radius:30px;
+
+    box-shadow:
+      0 40px 100px
+      rgba(0,0,0,.82),
+
+      0 0 0 1px
+      rgba(244,198,82,.15);
+  }
+
+}
+
+
+/* =========================================================
+   GOLD DUST
+========================================================= */
+
+.texture{
+  position:absolute;
+
+  z-index:-10;
+
+  inset:0;
+
+  pointer-events:none;
+
+  opacity:.32;
+
+  background-image:
+
+    radial-gradient(
+      rgba(255,221,130,.44) .65px,
+      transparent .9px
+    );
+
+  background-size:7px 7px;
+
+  mask-image:
+    linear-gradient(
+      to bottom,
+      black 0%,
+      black 72%,
+      transparent 100%
+    );
+}
+
+
+/* =========================================================
+   GOLD GLOWS
+========================================================= */
+
+.gold-glow{
+  position:absolute;
+
+  z-index:-9;
+
+  border-radius:50%;
+
+  filter:blur(48px);
+
+  pointer-events:none;
+}
+
+.gold-glow.one{
+  width:190px;
+  height:190px;
+
+  top:-85px;
+  right:-80px;
+
+  background:
+    rgba(255,193,43,.15);
+}
+
+.gold-glow.two{
+  width:180px;
+  height:180px;
+
+  left:-100px;
+  bottom:65px;
+
+  background:
+    rgba(211,141,23,.12);
+}
+
+
+/* =========================================================
+   BACKGROUND SCRIPT
+========================================================= */
+
+.bg-script{
+  position:absolute;
+
+  z-index:-7;
+
+  pointer-events:none;
+
+  white-space:nowrap;
+
+  color:
+    rgba(255,211,101,.055);
+
+  font-family:
+    "Great Vibes",
+    cursive;
+
+  font-size:51px;
+
+  line-height:1;
+}
+
+.bg-script.one{
+  top:170px;
+  left:-45px;
+
+  transform:
+    rotate(-13deg);
+}
+
+.bg-script.two{
+  top:455px;
+  right:-54px;
+
+  transform:
+    rotate(13deg);
+}
+
+.bg-script.three{
+  left:-22px;
+  bottom:80px;
+
+  font-size:45px;
+
+  transform:
+    rotate(-8deg);
+}
+
+
+/* =========================================================
+   GOLD GIFT BOXES
+========================================================= */
+
+.gift{
+  position:absolute;
+
+  z-index:-5;
+
+  width:56px;
+  height:48px;
+
+  border-radius:6px;
+
+  pointer-events:none;
+
+  opacity:.58;
+
+  background:
+    linear-gradient(
+      145deg,
+      #fff0a7 0%,
+      #eaba42 42%,
+      #9b6310 100%
+    );
+
+  box-shadow:
+    0 8px 22px
+    rgba(0,0,0,.32),
+
+    0 0 20px
+    rgba(244,190,52,.12);
+}
+
+.gift::before{
+  content:"";
+
+  position:absolute;
+
+  left:50%;
+  top:0;
+
+  width:9px;
+  height:100%;
+
+  transform:
+    translateX(-50%);
+
+  background:
+    linear-gradient(
+      #734606,
+      #c88d22
+    );
+}
+
+.gift::after{
+  content:"";
+
+  position:absolute;
+
+  left:0;
+  top:14px;
+
+  width:100%;
+  height:8px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #7c4b07,
+      #d5a13a,
+      #7c4b07
+    );
+}
+
+.gift .bow{
+  position:absolute;
+
+  z-index:3;
+
+  left:50%;
+  top:-14px;
+
+  width:36px;
+  height:22px;
+
+  transform:
+    translateX(-50%);
+}
+
+.gift .bow::before,
+.gift .bow::after{
+  content:"";
+
+  position:absolute;
+
+  top:4px;
+
+  width:19px;
+  height:13px;
+
+  border:
+    5px solid
+    #efc14d;
+
+  border-radius:
+    55% 55% 45% 55%;
+}
+
+.gift .bow::before{
+  left:0;
+
+  transform:
+    rotate(23deg);
+}
+
+.gift .bow::after{
+  right:0;
+
+  transform:
+    scaleX(-1)
+    rotate(23deg);
+}
+
+.gift.g1{
+  top:215px;
+  left:-20px;
+
+  transform:
+    rotate(-18deg)
+    scale(.82);
+}
+
+.gift.g2{
+  top:365px;
+  right:-22px;
+
+  transform:
+    rotate(19deg)
+    scale(.91);
+}
+
+.gift.g3{
+  left:-22px;
+  bottom:170px;
+
+  transform:
+    rotate(12deg)
+    scale(.69);
+}
+
+.gift.g4{
+  right:-18px;
+  bottom:75px;
+
+  transform:
+    rotate(-14deg)
+    scale(.72);
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header{
+  position:absolute;
+
+  z-index:40;
+
+  top:0;
+  left:0;
+  right:0;
+
+  padding:
+    calc(
+      9px +
+      env(safe-area-inset-top)
+    )
+    14px
+    6px;
+
+  pointer-events:none;
+}
+
+.header-box{
+  position:relative;
+
+  min-height:70px;
+
+  overflow:hidden;
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+  justify-content:center;
+
+  border-radius:19px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(18,18,18,.97),
+      rgba(4,4,4,.96)
+    );
+
+  border:
+    1px solid
+    rgba(245,199,81,.30);
+
+  box-shadow:
+    0 14px 30px
+    rgba(0,0,0,.48),
+
+    inset
+    0 1px 0
+    rgba(255,225,146,.08);
+}
+
+.header-box::before{
+  content:"";
+
+  position:absolute;
+
+  left:50%;
+  top:-60px;
+
+  width:150px;
+  height:100px;
+
+  transform:
+    translateX(-50%);
+
+  border-radius:50%;
+
+  background:
+    rgba(255,202,68,.14);
+
+  filter:blur(30px);
+}
+
+.black-friday-title{
+  position:relative;
+
+  z-index:2;
+
+  margin-top:2px;
+
+  color:#ffd66b;
+
+  font-family:
+    "Great Vibes",
+    cursive;
+
+  font-size:34px;
+
+  font-weight:400;
+
+  line-height:.9;
+
+  text-shadow:
+    0 2px 9px
+    rgba(0,0,0,.72),
+
+    0 0 20px
+    rgba(245,190,46,.15);
+}
+
+.phones-subtitle{
+  position:relative;
+
+  z-index:2;
+
+  margin-top:4px;
+
+  color:
+    rgba(255,255,255,.72);
+
+  font-size:8px;
+
+  font-weight:800;
+
+  letter-spacing:.28em;
+
+  text-transform:uppercase;
+}
+
+
+/* =========================================================
+   CATALOG
+========================================================= */
+
+.catalog{
+  position:relative;
+
+  z-index:2;
+
+  width:100%;
+  height:100%;
+
+  overflow-y:auto;
+  overflow-x:hidden;
+
+  padding:
+    calc(
+      89px +
+      env(safe-area-inset-top)
+    )
+    13px
+    calc(
+      100px +
+      env(safe-area-inset-bottom)
+    );
+
+  scrollbar-width:none;
+
+  -webkit-overflow-scrolling:touch;
+}
+
+.catalog::-webkit-scrollbar{
+  display:none;
+}
+
+.phone-list{
+  display:flex;
+
+  flex-direction:column;
+
+  gap:8px;
+}
+
+
+/* =========================================================
+   PRODUCT CARD
+========================================================= */
+
+.phone-card{
+  position:relative;
+
+  width:100%;
+  height:100px;
+
+  padding:6px 7px;
+
+  display:grid;
+
+  grid-template-columns:
+    94px
+    1fr
+    43px;
+
+  gap:8px;
+
+  align-items:center;
+
+  overflow:hidden;
+
+  border-radius:16px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(23,23,24,.96),
+      rgba(6,6,7,.94)
+    );
+
+  border:
+    1px solid
+    rgba(234,188,71,.17);
+
+  box-shadow:
+    0 9px 24px
+    rgba(0,0,0,.4),
+
+    inset
+    0 1px 0
+    rgba(255,224,141,.025);
+
+  backdrop-filter:blur(15px);
+
+  transition:
+    transform .15s ease,
+    background .2s ease,
+    border-color .2s ease,
+    box-shadow .2s ease;
+}
+
+.phone-card::before{
+  content:"";
+
+  position:absolute;
+
+  top:-65px;
+  right:-50px;
+
+  width:120px;
+  height:110px;
+
+  border-radius:50%;
+
+  background:
+    rgba(232,175,40,.08);
+
+  filter:blur(8px);
+}
+
+.phone-card::after{
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  pointer-events:none;
+
+  background:
+    linear-gradient(
+      110deg,
+      rgba(255,224,145,.04),
+      transparent 36%
+    );
+}
+
+.phone-card:active{
+  transform:
+    scale(.988);
+}
+
+.phone-card.selected{
+  background:
+    linear-gradient(
+      135deg,
+      rgba(63,45,12,.97),
+      rgba(16,13,7,.96)
+    );
+
+  border-color:
+    rgba(255,209,89,.78);
+
+  box-shadow:
+    0 0 0 2px
+    rgba(255,206,78,.07),
+
+    0 10px 27px
+    rgba(0,0,0,.42),
+
+    0 0 23px
+    rgba(239,181,37,.09);
+}
+
+
+/* =========================================================
+   PHONE IMAGE
+========================================================= */
+
+.phone-image-area{
+  position:relative;
+
+  z-index:2;
+
+  width:94px;
+  height:86px;
+
+  padding:4px;
+
+  display:flex;
+
+  align-items:center;
+  justify-content:center;
+
+  overflow:hidden;
+
+  border-radius:12px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #fefefe,
+      #dedede
+    );
+
+  border:
+    1px solid
+    rgba(255,211,102,.31);
+
+  box-shadow:
+    0 6px 15px
+    rgba(0,0,0,.32);
+}
+
+.phone-image{
+  width:100%;
+  height:100%;
+
+  max-width:86px;
+  max-height:79px;
+
+  object-fit:contain;
+
+  filter:
+    var(--phone-filter)
+    saturate(1.03);
+
+  transition:
+    transform .22s ease;
+}
+
+.phone-card.selected
+.phone-image{
+  transform:
+    scale(1.05);
+}
+
+
+/* =========================================================
+   PRODUCT INFO
+========================================================= */
+
+.phone-data{
+  position:relative;
+
+  z-index:2;
+
+  min-width:0;
+}
+
+.brand{
+  margin-bottom:2px;
+
+  color:
+    rgba(255,215,112,.50);
+
+  font-size:8px;
+
+  font-weight:650;
+}
+
+.model{
+  color:#fff;
+
+  font-size:15px;
+
+  font-weight:850;
+
+  line-height:1.04;
+
+  letter-spacing:-.04em;
+}
+
+.color-name{
+  margin-top:4px;
+
+  color:
+    rgba(255,221,132,.80);
+
+  font-size:9px;
+
+  font-weight:750;
+}
+
+.storage{
+  margin-top:2px;
+
+  color:
+    rgba(255,255,255,.39);
+
+  font-size:8px;
+
+  font-weight:650;
+}
+
+
+/* =========================================================
+   SELECT BUTTON
+========================================================= */
+
+.select-button{
+  position:relative;
+
+  z-index:3;
+
+  width:41px;
+  height:41px;
+
+  display:grid;
+
+  place-items:center;
+
+  border-radius:12px;
+
+  color:#17130a;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffe28a,
+      #c88e21
+    );
+
+  border:
+    1px solid
+    rgba(255,239,184,.45);
+
+  box-shadow:
+    0 5px 15px
+    rgba(0,0,0,.32),
+
+    inset
+    0 1px 0
+    rgba(255,255,255,.35);
+
+  transition:
+    transform .15s ease,
+    background .2s ease;
+}
+
+.select-button:active{
+  transform:
+    scale(.9);
+}
+
+.select-button.selected{
+  color:#090909;
+
+  background:
+    linear-gradient(
+      145deg,
+      #fff0a6,
+      #f3c447 54%,
+      #b17812
+    );
+
+  box-shadow:
+    0 0 17px
+    rgba(245,192,57,.24),
+
+    0 6px 16px
+    rgba(0,0,0,.31);
+}
+
+.plus-icon{
+  position:relative;
+
+  width:23px;
+  height:23px;
+}
+
+.plus-icon::before,
+.plus-icon::after{
+  content:"";
+
+  position:absolute;
+
+  left:50%;
+  top:50%;
+
+  transform:
+    translate(-50%,-50%);
+
+  border-radius:99px;
+
+  background:
+    currentColor;
+}
+
+.plus-icon::before{
+  width:22px;
+  height:3px;
+}
+
+.plus-icon::after{
+  width:3px;
+  height:22px;
+}
+
+.check-icon{
+  display:none;
+
+  width:20px;
+  height:12px;
+
+  border-left:
+    4px solid #090909;
+
+  border-bottom:
+    4px solid #090909;
+
+  transform:
+    translateY(-3px)
+    rotate(-45deg);
+}
+
+.select-button.selected
+.plus-icon{
+  display:none;
+}
+
+.select-button.selected
+.check-icon{
+  display:block;
+}
+
+
+/* =========================================================
+   BOTTOM PANEL
+========================================================= */
+
+.bottom-panel{
+  position:absolute;
+
+  z-index:30;
+
+  left:13px;
+  right:13px;
+
+  bottom:
+    calc(
+      10px +
+      env(safe-area-inset-bottom)
+    );
+
+  padding:5px;
+
+  border-radius:17px;
+
+  background:
+    rgba(4,4,4,.95);
+
+  border:
+    1px solid
+    rgba(245,194,63,.22);
+
+  box-shadow:
+    0 14px 32px
+    rgba(0,0,0,.58),
+
+    0 0 24px
+    rgba(221,160,30,.06);
+
+  backdrop-filter:blur(18px);
+}
+
+.bottom-row{
+  display:grid;
+
+  grid-template-columns:
+    62px
+    1fr;
+
+  gap:7px;
+}
+
+
+/* =========================================================
+   CART
+========================================================= */
+
+.basket-box{
+  position:relative;
+
+  width:62px;
+  height:51px;
+
+  display:grid;
+
+  place-items:center;
+
+  border-radius:12px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #181818,
+      #080808
+    );
+
+  border:
+    1px solid
+    rgba(244,194,63,.14);
+}
+
+.basket-icon{
+  position:relative;
+
+  width:26px;
+  height:23px;
+}
+
+.basket-icon::before{
+  content:"";
+
+  position:absolute;
+
+  left:3px;
+  right:3px;
+  bottom:1px;
+
+  height:13px;
+
+  border:
+    3px solid
+    #f4c652;
+
+  border-top:0;
+
+  border-radius:
+    0 0 7px 7px;
+}
+
+.basket-icon::after{
+  content:"";
+
+  position:absolute;
+
+  left:7px;
+  right:7px;
+  top:0;
+
+  height:9px;
+
+  border:
+    3px solid
+    #f4c652;
+
+  border-bottom:0;
+
+  border-radius:
+    12px 12px 0 0;
+}
+
+.basket-badge{
+  position:absolute;
+
+  top:5px;
+  right:5px;
+
+  min-width:20px;
+  height:20px;
+
+  padding:0 5px;
+
+  display:grid;
+
+  place-items:center;
+
+  border-radius:99px;
+
+  color:#050505;
+
+  background:
+    linear-gradient(
+      #ffe58f,
+      #c88c1d
+    );
+
+  box-shadow:
+    0 4px 12px
+    rgba(230,172,42,.24);
+
+  font-size:10px;
+
+  font-weight:900;
+}
+
+.basket-badge.zero{
+  color:#d5b45f;
+
+  background:#26231c;
+
+  box-shadow:none;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.cta{
+  position:relative;
+
+  width:100%;
+  height:51px;
+
+  overflow:hidden;
+
+  border-radius:12px;
+
+  color:#090909;
+
+  background:
+    linear-gradient(
+      145deg,
+      #fff1ab 0%,
+      #f3c348 38%,
+      #bf8217 100%
+    );
+
+  border:
+    1px solid
+    rgba(255,235,166,.55);
+
+  box-shadow:
+    0 8px 19px
+    rgba(200,140,24,.20),
+
+    inset
+    0 1px 0
+    rgba(255,255,255,.55);
+
+  font-size:15px;
+
+  font-weight:900;
+
+  letter-spacing:-.02em;
+
+  transition:
+    transform .15s ease,
+    filter .15s ease;
+}
+
+.cta::before{
+  content:"";
+
+  position:absolute;
+
+  top:-23px;
+  left:-110px;
+
+  width:90px;
+  height:100px;
+
+  transform:
+    rotate(25deg);
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255,255,255,.5),
+      transparent
+    );
+
+  animation:
+    shine
+    3.6s
+    ease-in-out
+    infinite;
+}
+
+@keyframes shine{
+
+  0%,65%{
+    left:-110px;
+  }
+
+  100%{
+    left:120%;
+  }
+
+}
+
+.cta:active{
+  transform:
+    scale(.98);
+
+  filter:
+    brightness(.9);
+}
+
+.cta.shake{
+  animation:
+    shake
+    .4s
+    ease;
+}
+
+@keyframes shake{
+
+  25%{
+    transform:
+      translateX(-7px);
+  }
+
+  50%{
+    transform:
+      translateX(7px);
+  }
+
+  75%{
+    transform:
+      translateX(-4px);
+  }
+
+}
+
+
+/* =========================================================
+   DELIVERY
+========================================================= */
+
+.delivery-overlay{
+  position:absolute;
+
+  z-index:100;
+
+  inset:0;
+
+  overflow:hidden;
+
+  opacity:0;
+  visibility:hidden;
+
+  background:
+
+    radial-gradient(
+      circle at 50% 7%,
+      rgba(238,179,39,.20),
+      transparent 34%
+    ),
+
+    radial-gradient(
+      circle at 0% 75%,
+      rgba(185,116,13,.14),
+      transparent 35%
+    ),
+
+    linear-gradient(
+      160deg,
+      #030303,
+      #100d07 55%,
+      #020202
+    );
+
+  transition:
+    opacity .3s ease,
+    visibility .3s ease;
+}
+
+.delivery-overlay.visible{
+  opacity:1;
+  visibility:visible;
+}
+
+.delivery-script{
+  position:absolute;
+
+  z-index:2;
+
+  top:50px;
+  left:50%;
+
+  width:100%;
+
+  transform:
+    translateX(-50%);
+
+  color:
+    #e9bb4d;
+
+  font-family:
+    "Great Vibes",
+    cursive;
+
+  font-size:46px;
+
+  text-align:center;
+
+  opacity:.72;
+
+  pointer-events:none;
+}
+
+
+/* =========================================================
+   DELIVERY GIFTS
+========================================================= */
+
+.delivery-gift{
+  position:absolute;
+
+  z-index:1;
+
+  width:57px;
+  height:50px;
+
+  border-radius:6px;
+
+  opacity:.36;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffe58b,
+      #be8018
+    );
+
+  pointer-events:none;
+}
+
+.delivery-gift::before{
+  content:"";
+
+  position:absolute;
+
+  left:50%;
+  top:0;
+
+  width:9px;
+  height:100%;
+
+  transform:
+    translateX(-50%);
+
+  background:#6f4407;
+}
+
+.delivery-gift::after{
+  content:"";
+
+  position:absolute;
+
+  left:0;
+  top:16px;
+
+  width:100%;
+  height:8px;
+
+  background:#8c5c0d;
+}
+
+.delivery-gift.one{
+  top:145px;
+  left:-18px;
+
+  transform:
+    rotate(-18deg);
+}
+
+.delivery-gift.two{
+  top:245px;
+  right:-20px;
+
+  transform:
+    rotate(16deg)
+    scale(.8);
+}
+
+
+/* =========================================================
+   ROAD
+========================================================= */
+
+.road{
+  position:absolute;
+
+  left:0;
+  right:0;
+  bottom:0;
+
+  height:116px;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(215,155,27,.06),
+      transparent
+    );
+}
+
+.road::before{
+  content:"";
+
+  position:absolute;
+
+  left:-10%;
+  right:-10%;
+  bottom:25px;
+
+  height:64px;
+
+  background:
+    linear-gradient(
+      #1c1c1c,
+      #070707
+    );
+
+  border-top:
+    1px solid
+    rgba(255,204,78,.12);
+}
+
+.road::after{
+  content:"";
+
+  position:absolute;
+
+  left:8%;
+  right:8%;
+  bottom:54px;
+
+  height:4px;
+
+  opacity:.72;
+
+  background:
+    repeating-linear-gradient(
+      to right,
+      #dcae3e 0 24px,
+      transparent 24px 42px
+    );
+}
+
+
+/* =========================================================
+   TRUCK
+========================================================= */
+
+.truck{
+  position:absolute;
+
+  z-index:110;
+
+  left:50%;
+  bottom:47px;
+
+  width:275px;
+  height:150px;
+
+  transform:
+    translateX(-50%);
+
+  transition:
+    transform
+    1.15s
+    cubic-bezier(.25,.8,.2,1);
+}
+
+.truck.drive-away{
+  transform:
+    translateX(240%);
+}
+
+.truck-body{
+  position:absolute;
+
+  left:22px;
+  bottom:27px;
+
+  width:165px;
+  height:68px;
+
+  border-radius:
+    13px 10px 10px 10px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #292315,
+      #0b0b0b
+    );
+
+  border:
+    2px solid
+    rgba(235,184,55,.30);
+
+  box-shadow:
+    0 12px 22px
+    rgba(0,0,0,.35);
+}
+
+.truck-bed{
+  position:absolute;
+
+  left:29px;
+  bottom:38px;
+
+  width:151px;
+  height:45px;
+
+  overflow:hidden;
+
+  border-radius:8px;
+
+  background:
+    linear-gradient(
+      #18150d,
+      #050505
+    );
+
+  box-shadow:
+    inset
+    0 7px 11px
+    rgba(0,0,0,.5);
+}
+
+.truck-cargo{
+  position:absolute;
+
+  inset:0;
+
+  padding:4px;
+
+  display:flex;
+
+  align-items:flex-end;
+  justify-content:center;
+
+  gap:2px;
+}
+
+.cargo-phone{
+  width:26px;
+  height:33px;
+
+  object-fit:contain;
+
+  filter:
+    var(--phone-filter);
+}
+
+.truck-cab{
+  position:absolute;
+
+  right:25px;
+  bottom:27px;
+
+  width:90px;
+  height:78px;
+
+  border-radius:
+    17px 19px 10px 12px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffe184,
+      #d39a27 58%,
+      #8f5e0c
+    );
+
+  border:
+    2px solid
+    rgba(255,239,174,.35);
+
+  box-shadow:
+    0 10px 20px
+    rgba(0,0,0,.28);
+}
+
+.truck-window{
+  position:absolute;
+
+  left:15px;
+  top:10px;
+
+  width:44px;
+  height:29px;
+
+  border-radius:
+    10px 10px 7px 7px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #282828,
+      #080808
+    );
+
+  border:
+    2px solid
+    rgba(255,221,127,.28);
+}
+
+.truck-light{
+  position:absolute;
+
+  right:-4px;
+  top:42px;
+
+  width:10px;
+  height:10px;
+
+  border-radius:50%;
+
+  background:
+    #fff0a9;
+
+  box-shadow:
+    0 0 15px
+    #f0bc3e;
+}
+
+.wheel{
+  position:absolute;
+
+  bottom:0;
+
+  width:49px;
+  height:49px;
+
+  border-radius:50%;
+
+  border:
+    2px solid #000;
+
+  background:
+    radial-gradient(
+      circle,
+      #d5ae4d 0 18%,
+      #343434 19% 34%,
+      #090909 35% 63%,
+      #000 64%
+    );
+}
+
+.wheel.left{
+  left:55px;
+}
+
+.wheel.right{
+  right:50px;
+}
+
+
+/* =========================================================
+   FLYING PHONES
+========================================================= */
+
+.flying-phone{
+  position:absolute;
+
+  z-index:120;
+
+  width:88px;
+  height:88px;
+
+  object-fit:contain;
+
+  opacity:0;
+
+  filter:
+    var(--phone-filter);
+
+  pointer-events:none;
+}
+
+
+/* =========================================================
+   CONFETTI
+========================================================= */
+
+.confetti-layer{
+  position:absolute;
+
+  z-index:130;
+
+  inset:0;
+
+  overflow:hidden;
+
+  pointer-events:none;
+}
+
+.confetti{
+  position:absolute;
+
+  top:-18px;
+
+  width:7px;
+  height:12px;
+
+  opacity:0;
+
+  border-radius:2px;
+}
+
+
+/* =========================================================
+   FINAL
+========================================================= */
+
+.final-result{
+  position:absolute;
+
+  z-index:150;
+
+  left:50%;
+  top:44%;
+
+  width:
+    min(
+      calc(100% - 38px),
+      300px
+    );
+
+  padding:
+    24px
+    20px
+    22px;
+
+  opacity:0;
+  visibility:hidden;
+
+  transform:
+    translate(-50%,-50%)
+    scale(.82);
+
+  border-radius:24px;
+
+  text-align:center;
+
+  color:#fff;
+
+  background:
+    linear-gradient(
+      150deg,
+      rgba(22,22,22,.98),
+      rgba(5,5,5,.99)
+    );
+
+  border:
+    1px solid
+    rgba(244,195,70,.26);
+
+  box-shadow:
+    0 27px 65px
+    rgba(0,0,0,.7),
+
+    0 0 36px
+    rgba(215,156,29,.08);
+
+  backdrop-filter:blur(18px);
+
+  transition:
+    opacity .4s ease,
+    transform .5s
+    cubic-bezier(.2,1,.25,1),
+    visibility .4s ease;
+}
+
+.final-result.visible{
+  opacity:1;
+  visibility:visible;
+
+  transform:
+    translate(-50%,-50%)
+    scale(1);
+}
+
+.final-script{
+  margin-bottom:4px;
+
+  color:#e8b943;
+
+  font-family:
+    "Great Vibes",
+    cursive;
+
+  font-size:32px;
+
+  line-height:1;
+}
+
+.final-check{
+  position:relative;
+
+  width:68px;
+  height:68px;
+
+  margin:
+    0 auto
+    15px;
+
+  display:grid;
+
+  place-items:center;
+
+  border-radius:50%;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffe794,
+      #e8b436 55%,
+      #a66b0d
+    );
+
+  box-shadow:
+    0 10px 27px
+    rgba(191,133,19,.24);
+}
+
+.final-check::before{
+  content:"";
+
+  position:absolute;
+
+  inset:-5px;
+
+  border:
+    2px solid
+    rgba(244,192,57,.21);
+
+  border-radius:50%;
+}
+
+.final-check-icon{
+  width:30px;
+  height:18px;
+
+  border-left:
+    6px solid
+    #090909;
+
+  border-bottom:
+    6px solid
+    #090909;
+
+  transform:
+    translateY(-4px)
+    rotate(-45deg);
+}
+
+.final-title{
+  font-size:21px;
+
+  font-weight:900;
+
+  line-height:1.08;
+
+  letter-spacing:-.04em;
+}
+
+.final-text{
+  margin-top:7px;
+
+  color:
+    rgba(255,255,255,.51);
+
+  font-size:12px;
+
+  font-weight:600;
+
+  line-height:1.4;
+}
+
+.final-button{
+  width:100%;
+  height:45px;
+
+  margin-top:16px;
+
+  border-radius:13px;
+
+  color:#090909;
+
+  background:
+    linear-gradient(
+      #ffe894,
+      #e6b136
+    );
+
+  border:
+    1px solid
+    rgba(255,239,177,.46);
+
+  box-shadow:
+    0 7px 17px
+    rgba(185,126,18,.16);
+
+  font-size:13px;
+
+  font-weight:900;
+}
+
+</style>
+</head>
+
+<body>
+
+<div
+  class="app"
+  id="app"
+>
+
+  <!-- BACKGROUND -->
+
+  <div class="texture"></div>
+
+  <div class="gold-glow one"></div>
+  <div class="gold-glow two"></div>
+
+
+  <!-- BACKGROUND BLACK FRIDAY TEXT -->
+
+  <div class="bg-script one">
+    Black Friday
+  </div>
+
+  <div class="bg-script two">
+    Black Friday
+  </div>
+
+  <div class="bg-script three">
+    Black Friday
+  </div>
+
+
+  <!-- GOLD GIFTS -->
+
+  <div class="gift g1">
+    <div class="bow"></div>
+  </div>
+
+  <div class="gift g2">
+    <div class="bow"></div>
+  </div>
+
+  <div class="gift g3">
+    <div class="bow"></div>
+  </div>
+
+  <div class="gift g4">
+    <div class="bow"></div>
+  </div>
+
+
+  <!-- HEADER -->
+
+  <header class="site-header">
+
+    <div class="header-box">
+
+      <div class="black-friday-title">
+        Black Friday
+      </div>
+
+      <div class="phones-subtitle">
+        Phones
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- CATALOG -->
+
+  <main
+    class="catalog"
+    id="catalog"
+  >
+
+    <div
+      class="phone-list"
+      id="phoneList"
+    ></div>
+
+  </main>
+
+
+  <!-- CART + CTA -->
+
+  <div class="bottom-panel">
+
+    <div class="bottom-row">
+
+      <div class="basket-box">
+
+        <div class="basket-icon"></div>
+
+        <div
+          class="basket-badge zero"
+          id="basketBadge"
+        >
+          0
+        </div>
+
+      </div>
+
+
+      <button
+        class="cta"
+        id="cta"
+        type="button"
+      >
+        Get insights
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- DELIVERY -->
+
+  <div
+    class="delivery-overlay"
+    id="deliveryOverlay"
+  >
+
+    <div class="delivery-script">
+      Black Friday
+    </div>
+
+    <div class="delivery-gift one"></div>
+    <div class="delivery-gift two"></div>
+
+
+    <div class="road"></div>
+
+
+    <div
+      class="truck"
+      id="truck"
+    >
+
+      <div class="truck-body"></div>
+
+
+      <div class="truck-bed">
+
+        <div
+          class="truck-cargo"
+          id="truckCargo"
+        ></div>
+
+      </div>
+
+
+      <div class="truck-cab">
+
+        <div class="truck-window"></div>
+
+        <div class="truck-light"></div>
+
+      </div>
+
+
+      <div class="wheel left"></div>
+
+      <div class="wheel right"></div>
+
+    </div>
+
+
+    <div
+      class="confetti-layer"
+      id="confettiLayer"
+    ></div>
+
+
+    <!-- FINAL -->
+
+    <div
+      class="final-result"
+      id="finalResult"
+    >
+
+      <div class="final-script">
+        Black Friday
+      </div>
+
+
+      <div class="final-check">
+
+        <div class="final-check-icon"></div>
+
+      </div>
+
+
+      <div class="final-title">
+        Your iPhone 18 is on the way!
+      </div>
+
+
+      <div class="final-text">
+        Your selected iPhone 18 is heading to you.
+      </div>
+
+
+      <button
+        class="final-button"
+        id="backButton"
+        type="button"
+      >
+        Choose again
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<script>
+
+/* =====================================================
+   SAME IMAGE FOR EVERY IPHONE
+===================================================== */
+
+const BASE_IPHONE_IMAGE =
+  "https://geniusphone.it/cdn/shop/files/Progettosenzatitolo_5.png?v=1761114584";
+
+
+/* =====================================================
+   COLORS
+===================================================== */
+
+const colors = [
+
+  {
+    id:"burgundy",
+
+    name:"Burgundy",
+
+    filter:
+      "hue-rotate(328deg) saturate(1.7) brightness(.72) contrast(1.08)"
+  },
+
+  {
+    id:"glacier",
+
+    name:"Glacier",
+
+    filter:
+      "hue-rotate(170deg) saturate(.45) brightness(1.22) contrast(.92)"
+  },
+
+  {
+    id:"silver",
+
+    name:"Silver",
+
+    filter:
+      "grayscale(1) brightness(1.45) contrast(.78)"
+  },
+
+  {
+    id:"black",
+
+    name:"Black",
+
+    filter:
+      "grayscale(1) brightness(.35) contrast(1.35)"
+  }
+
+];
+
+
+/* =====================================================
+   STORAGE
+===================================================== */
+
+const storages = [
+
+  "256 GB",
+  "512 GB",
+  "1 TB"
+
+];
+
+
+/* =====================================================
+   GENERATE PRODUCTS
+===================================================== */
+
+const phones = [];
+
+
+colors.forEach(
+  color => {
+
+    storages.forEach(
+      storage => {
+
+        phones.push(
+          {
+            id:
+              `${color.id}-${storage}`,
+
+            model:
+              "iPhone 18",
+
+            color:
+              color.name,
+
+            storage:
+              storage,
+
+            filter:
+              color.filter
+          }
+        );
+
+      }
+    );
+
+  }
+);
+
+
+/* =====================================================
+   STATE
+===================================================== */
+
+const state = {
+
+  selected:[]
+
+};
+
+
+/* =====================================================
+   ELEMENTS
+===================================================== */
+
+const $ =
+  selector =>
+    document.querySelector(
+      selector
+    );
+
+
+const app =
+  $("#app");
+
+const catalog =
+  $("#catalog");
+
+const phoneList =
+  $("#phoneList");
+
+const basketBadge =
+  $("#basketBadge");
+
+const cta =
+  $("#cta");
+
+const deliveryOverlay =
+  $("#deliveryOverlay");
+
+const truck =
+  $("#truck");
+
+const truckCargo =
+  $("#truckCargo");
+
+const confettiLayer =
+  $("#confettiLayer");
+
+const finalResult =
+  $("#finalResult");
+
+const backButton =
+  $("#backButton");
+
+
+/* =====================================================
+   RENDER PRODUCTS
+===================================================== */
+
+function renderPhones(){
+
+  const scroll =
+    catalog.scrollTop;
+
+
+  phoneList.innerHTML =
+    "";
+
+
+  phones.forEach(
+    phone => {
+
+      const selected =
+        state.selected.includes(
+          phone.id
+        );
+
+
+      const card =
+        document.createElement(
+          "article"
+        );
+
+
+      card.className =
+        "phone-card" +
+        (
+          selected
+            ? " selected"
+            : ""
+        );
+
+
+      card.innerHTML =
+        `
+
+          <div class="phone-image-area">
+
+            <img
+              class="phone-image"
+
+              src="${BASE_IPHONE_IMAGE}"
+
+              alt="iPhone 18 ${phone.color}"
+
+              draggable="false"
+
+              style="
+                --phone-filter:
+                ${phone.filter};
+              "
+            >
+
+          </div>
+
+
+          <div class="phone-data">
+
+            <div class="brand">
+              Apple
+            </div>
+
+            <div class="model">
+              iPhone 18
+            </div>
+
+            <div class="color-name">
+              ${phone.color}
+            </div>
+
+            <div class="storage">
+              ${phone.storage}
+            </div>
+
+          </div>
+
+
+          <button
+            class="
+              select-button
+              ${
+                selected
+                  ? "selected"
+                  : ""
+              }
+            "
+
+            type="button"
+          >
+
+            <div class="plus-icon"></div>
+
+            <div class="check-icon"></div>
+
+          </button>
+
+        `;
+
+
+      const selectButton =
+        card.querySelector(
+          ".select-button"
+        );
+
+
+      selectButton.addEventListener(
+        "click",
+        event => {
+
+          event.stopPropagation();
+
+
+          togglePhone(
+            phone.id
+          );
+
+        }
+      );
+
+
+      card.addEventListener(
+        "click",
+        event => {
+
+          if(
+            event.target.closest(
+              ".select-button"
+            )
+          ){
+            return;
+          }
+
+
+          togglePhone(
+            phone.id
+          );
+
+        }
+      );
+
+
+      phoneList.appendChild(
+        card
+      );
+
+    }
+  );
+
+
+  updateBasket();
+
+
+  requestAnimationFrame(
+    () => {
+
+      catalog.scrollTop =
+        scroll;
+
+    }
+  );
+
+}
+
+
+/* =====================================================
+   SELECT / UNSELECT
+===================================================== */
+
+function togglePhone(
+  id
+){
+
+  const index =
+    state.selected.indexOf(
+      id
+    );
+
+
+  if(
+    index >= 0
+  ){
+
+    state.selected.splice(
+      index,
+      1
+    );
+
+  }else{
+
+    state.selected.push(
+      id
+    );
+
+  }
+
+
+  renderPhones();
+
+}
+
+
+/* =====================================================
+   BASKET
+===================================================== */
+
+function updateBasket(){
+
+  basketBadge.textContent =
+    state.selected.length;
+
+
+  basketBadge.classList.toggle(
+    "zero",
+    state.selected.length === 0
+  );
+
+}
+
+
+/* =====================================================
+   GET INSIGHTS
+===================================================== */
+
+cta.addEventListener(
+  "click",
+  () => {
+
+    if(
+      state.selected.length === 0
+    ){
+
+      cta.classList.remove(
+        "shake"
+      );
+
+
+      void cta.offsetWidth;
+
+
+      cta.classList.add(
+        "shake"
+      );
+
+
+      return;
+    }
+
+
+    startDelivery();
+
+  }
+);
+
+
+/* =====================================================
+   DELIVERY
+===================================================== */
+
+function startDelivery(){
+
+  deliveryOverlay.classList.add(
+    "visible"
+  );
+
+
+  truck.classList.remove(
+    "drive-away"
+  );
+
+
+  finalResult.classList.remove(
+    "visible"
+  );
+
+
+  truckCargo.innerHTML =
+    "";
+
+
+  confettiLayer.innerHTML =
+    "";
+
+
+  document
+    .querySelectorAll(
+      ".flying-phone"
+    )
+    .forEach(
+      item =>
+        item.remove()
+    );
+
+
+  const selected =
+    state.selected
+      .map(
+        id =>
+          phones.find(
+            phone =>
+              phone.id === id
+          )
+      )
+      .filter(Boolean);
+
+
+  /*
+    Phones fly toward the truck.
+  */
+
+  selected
+    .slice(
+      0,
+      6
+    )
+    .forEach(
+      (
+        phone,
+        index
+      ) => {
+
+        const image =
+          document.createElement(
+            "img"
+          );
+
+
+        image.className =
+          "flying-phone";
+
+
+        image.src =
+          BASE_IPHONE_IMAGE;
+
+
+        image.style.setProperty(
+          "--phone-filter",
+          phone.filter
+        );
+
+
+        const column =
+          index %
+          3;
+
+
+        const row =
+          Math.floor(
+            index /
+            3
+          );
+
+
+        const startX =
+          20 +
+          column *
+          104;
+
+
+        const startY =
+          85 +
+          row *
+          82;
+
+
+        image.style.left =
+          `${startX}px`;
+
+
+        image.style.top =
+          `${startY}px`;
+
+
+        deliveryOverlay.appendChild(
+          image
+        );
+
+
+        const targetX =
+          app.clientWidth /
+          2 -
+          startX;
+
+
+        const targetY =
+          app.clientHeight -
+          160 -
+          startY;
+
+
+        const animation =
+          image.animate(
+            [
+
+              {
+                opacity:0,
+
+                transform:
+                  `
+                    translateY(-20px)
+                    scale(.8)
+                  `
+              },
+
+              {
+                opacity:1,
+
+                transform:
+                  `
+                    translateY(0)
+                    scale(1)
+                  `,
+
+                offset:.14
+              },
+
+              {
+                opacity:1,
+
+                transform:
+                  `
+                    translate(
+                      ${targetX * .52}px,
+                      ${targetY * .55}px
+                    )
+
+                    scale(.68)
+                  `,
+
+                offset:.6
+              },
+
+              {
+                opacity:0,
+
+                transform:
+                  `
+                    translate(
+                      ${targetX}px,
+                      ${targetY}px
+                    )
+
+                    scale(.28)
+                  `
+              }
+
+            ],
+
+            {
+              duration:1200,
+
+              delay:
+                index *
+                135,
+
+              easing:
+                "cubic-bezier(.2,.72,.2,1)",
+
+              fill:
+                "forwards"
+            }
+          );
+
+
+        animation.onfinish =
+          () => {
+
+            image.remove();
+
+          };
+
+      }
+    );
+
+
+  /*
+    The selected phones now
+    visibly appear in the truck.
+  */
+
+  window.setTimeout(
+    () => {
+
+      selected
+        .slice(
+          0,
+          5
+        )
+        .forEach(
+          phone => {
+
+            const image =
+              document.createElement(
+                "img"
+              );
+
+
+            image.className =
+              "cargo-phone";
+
+
+            image.src =
+              BASE_IPHONE_IMAGE;
+
+
+            image.style.setProperty(
+              "--phone-filter",
+              phone.filter
+            );
+
+
+            truckCargo.appendChild(
+              image
+            );
+
+          }
+        );
+
+    },
+    1350
+  );
+
+
+  /*
+    Truck and the phones leave
+    the screen together.
+  */
+
+  window.setTimeout(
+    () => {
+
+      truck.classList.add(
+        "drive-away"
+      );
+
+    },
+    1800
+  );
+
+
+  /*
+    Golden confetti.
+  */
+
+  window.setTimeout(
+    createConfetti,
+    2050
+  );
+
+
+  /*
+    Final result.
+  */
+
+  window.setTimeout(
+    () => {
+
+      finalResult.classList.add(
+        "visible"
+      );
+
+    },
+    2500
+  );
+
+}
+
+
+/* =====================================================
+   CONFETTI
+===================================================== */
+
+function createConfetti(){
+
+  confettiLayer.innerHTML =
+    "";
+
+
+  const colors = [
+
+    "#ffffff",
+    "#fff1ad",
+    "#f3c447",
+    "#c98b1d",
+    "#8b5a0c",
+    "#292929"
+
+  ];
+
+
+  for(
+    let i = 0;
+    i < 95;
+    i++
+  ){
+
+    const piece =
+      document.createElement(
+        "span"
+      );
+
+
+    piece.className =
+      "confetti";
+
+
+    piece.style.left =
+      `${
+        Math.random() *
+        100
+      }%`;
+
+
+    piece.style.width =
+      `${
+        4 +
+        Math.random() *
+        6
+      }px`;
+
+
+    piece.style.height =
+      `${
+        7 +
+        Math.random() *
+        10
+      }px`;
+
+
+    piece.style.background =
+      colors[
+        Math.floor(
+          Math.random() *
+          colors.length
+        )
+      ];
+
+
+    confettiLayer.appendChild(
+      piece
+    );
+
+
+    const x =
+      (
+        Math.random() -
+        .5
+      ) *
+      105;
+
+
+    const rotation =
+      Math.random() *
+      900;
+
+
+    const animation =
+      piece.animate(
+        [
+
+          {
+            opacity:0,
+
+            transform:
+              `
+                translate(
+                  0,
+                  -20px
+                )
+
+                rotate(0deg)
+              `
+          },
+
+          {
+            opacity:1,
+
+            offset:.1
+          },
+
+          {
+            opacity:0,
+
+            transform:
+              `
+                translate(
+                  ${x}px,
+
+                  ${
+                    app.clientHeight +
+                    90
+                  }px
+                )
+
+                rotate(
+                  ${rotation}deg
+                )
+              `
+          }
+
+        ],
+
+        {
+          duration:
+            1700 +
+            Math.random() *
+            900,
+
+          delay:
+            Math.random() *
+            300,
+
+          easing:
+            "cubic-bezier(.15,.62,.2,1)",
+
+          fill:
+            "forwards"
+        }
+      );
+
+
+    animation.onfinish =
+      () => {
+
+        piece.remove();
+
+      };
+
+  }
+
+}
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+backButton.addEventListener(
+  "click",
+  () => {
+
+    deliveryOverlay.classList.remove(
+      "visible"
+    );
+
+
+    truck.classList.remove(
+      "drive-away"
+    );
+
+
+    finalResult.classList.remove(
+      "visible"
+    );
+
+
+    truckCargo.innerHTML =
+      "";
+
+
+    confettiLayer.innerHTML =
+      "";
+
+
+    document
+      .querySelectorAll(
+        ".flying-phone"
+      )
+      .forEach(
+        item =>
+          item.remove()
+      );
+
+
+    state.selected =
+      [];
+
+
+    renderPhones();
+
+
+    catalog.scrollTop =
+      0;
+
+  }
+);
+
+
+/* =====================================================
+   PRELOAD
+===================================================== */
+
+const preload =
+  new Image();
+
+
+preload.src =
+  BASE_IPHONE_IMAGE;
+
+
+/* =====================================================
+   START
+===================================================== */
+
+renderPhones();
+
+</script>
+
+</body>
+</html>
